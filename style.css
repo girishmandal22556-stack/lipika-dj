@@ -1,1 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
 
+.dj-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #1b1b1b;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #ff0066;
+}
+
+h1 {
+    color: #ff0066;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 10px;
+    background: #ff0066;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00ccff;
+}
+
+input[type="range"] {
+    width: 90%;
+    margin: 10px;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.equalizer {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 120px;
+    gap: 8px;
+    margin: 20px;
+}
+
+.bar {
+    width: 15px;
+    height: 40px;
+    background: #00ccff;
+    animation: beat 0.8s infinite alternate;
+}
+
+.bar:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.bar:nth-child(3) {
+    animation-delay: .4s;
+}
+
+.bar:nth-child(4) {
+    animation-delay: .6s;
+}
+
+@keyframes beat {
+    from {
+        height: 30px;
+    }
+    to {
+        height: 120px;
+    }
+}
+
+.playlist {
+    background: #111;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.song {
+    padding: 10px;
+    margin: 5px;
+    background: #333;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.song:hover {
+    background: #ff0066;
+}
